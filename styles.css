@@ -1,5 +1,62 @@
+
 body {
-    background-color: #dcdcdc;
+    background: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+ .headings
+{
+    background: -webkit-linear-gradient(#160163, #475bee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+
+h2{
+    color: #275673;
+}
+
+.content
+{
+    text-align: center;
+}
+
+                                            /* navigation bar */
+/* navbar current page indicator */
+.this-page{
+    background-color: #496373;
+    border-radius: 9px;
+}
+/* main navbar */
+.navbar {
+    overflow: hidden;
+    background-color: #275673;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-radius: 15px;
+}
+/*navbar links*/
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+    
+}
+/*mouse hover animation on navbar*/
+.navbar a:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 9px;
+}
+
+.tree-images{
+    border-radius: 15px;
+    border: 5px solid #275673;
 }
 
 
@@ -7,7 +64,6 @@ body {
 table{
     border-collapse: collapse;
 }
-
 td,
 th{
     border: 1px solid #000000;
@@ -19,8 +75,36 @@ th{
 }
 
 
+
+/* assessment and class lists */
+ .lists{
+    color: #ffffff;
+    background: #275673;
+    padding: 6px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.lists:hover{
+    color: #000000;
+    background: #275673;
+} 
+ul li {
+    margin-bottom: 15px;
+    list-style-type: none;
+    padding: 0
+}
+
+.horizonral-list{
+    li a {
+    display: block;
+    }
+}
+
 /* Font */
 
 body {
     font-family: Arial, sans-serif;
 }
+
+  
