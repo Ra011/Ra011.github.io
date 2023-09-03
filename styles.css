@@ -4,6 +4,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
  .headings
@@ -21,7 +23,6 @@ h2{
 {
     text-align: center;
 }
-
                                             /* navigation bar */
 /* navbar current page indicator */
 .this-page{
@@ -29,7 +30,7 @@ h2{
     border-radius: 9px;
 }
 /* main navbar */
-.navbar {
+#navbar {
     overflow: hidden;
     background-color: #275673;
     position: sticky;
@@ -38,7 +39,7 @@ h2{
     border-radius: 15px;
 }
 /*navbar links*/
-.navbar a {
+#navbar a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -48,7 +49,7 @@ h2{
     
 }
 /*mouse hover animation on navbar*/
-.navbar a:hover {
+#navbar a:hover {
     background: rgb(255, 255, 255);
     color: black;
     border-radius: 9px;
@@ -62,15 +63,22 @@ h2{
 
 /* tables */
 table{
+    margin: 0 auto;
     border-collapse: collapse;
+    
 }
 td,
 th{
     border: 1px solid #000000;
     color: #000000;
+    padding: 12px;
 }
 th{
-    background-color: #4a4a4a;
+    background-color: #275673;
+    color: #ffffff;
+}
+td{
+    background-color: #496373;
     color: #ffffff;
 }
 
