@@ -1,0 +1,33 @@
+/* navigation bar */
+/* current page indicator on navbar */
+.this-page {
+    background-color: #496373;
+    border-radius: 9px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #275673;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/*navbar links*/
+#navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 26px;
+    text-decoration: none;
+
+}
+
+/*mouse hover animation on navbar*/
+#navbar a:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 9px;
+}

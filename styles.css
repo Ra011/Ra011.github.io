@@ -1,4 +1,3 @@
-
 body {
     background: url("images/background.jpg");
     background-repeat: no-repeat;
@@ -8,27 +7,27 @@ body {
     text-align: center;
 }
 
- .headings
-{
+.headings {
     background: -webkit-linear-gradient(#160163, #475bee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-} 
+}
 
-h2{
+h2 {
     color: #275673;
 }
 
-.content
-{
+.content {
     text-align: center;
 }
-                                            /* navigation bar */
-/* navbar current page indicator */
-.this-page{
+
+/* navigation bar */
+/* current page indicator on */
+.this-page {
     background-color: #496373;
     border-radius: 9px;
 }
+
 /* main navbar */
 #navbar {
     overflow: hidden;
@@ -36,18 +35,20 @@ h2{
     position: sticky;
     top: 0;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 14px;
+    text-align: center;
 }
+
 /*navbar links*/
 #navbar a {
-    float: left;
-    display: block;
+
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 26px;
     text-decoration: none;
-    
 }
+
 /*mouse hover animation on navbar*/
 #navbar a:hover {
     background: rgb(255, 255, 255);
@@ -55,29 +56,31 @@ h2{
     border-radius: 9px;
 }
 
-.tree-images{
-    border-radius: 15px;
+.tree-images {
+    border-radius: 14px;
     border: 5px solid #275673;
 }
 
 
 /* tables */
-table{
+table {
     margin: 0 auto;
     border-collapse: collapse;
-    
 }
+
 td,
-th{
+th {
     border: 1px solid #000000;
     color: #000000;
     padding: 12px;
 }
-th{
+
+th {
     background-color: #275673;
     color: #ffffff;
 }
-td{
+
+td {
     background-color: #496373;
     color: #ffffff;
 }
@@ -85,27 +88,30 @@ td{
 
 
 /* assessment and class lists */
- .lists{
+.lists {
     color: #ffffff;
     background: #275673;
     padding: 6px;
     border-radius: 6px;
     text-decoration: none;
+    
 }
 
-.lists:hover{
+.lists:hover {
     color: #000000;
     background: #275673;
-} 
-ul li {
-    margin-bottom: 15px;
-    list-style-type: none;
-    padding: 0
 }
 
-.horizonral-list{
+ul li {
+    margin-bottom: 16px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.horizonral-list {
     li a {
-    display: block;
+        display: block;
+        padding-left: 0px;
     }
 }
 
@@ -114,5 +120,3 @@ ul li {
 body {
     font-family: Arial, sans-serif;
 }
-
-  
