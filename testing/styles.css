@@ -1,5 +1,5 @@
 body {
-    background: url("images/background.jpg");
+    background: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;   
@@ -18,6 +18,8 @@ h2 {
 .content {
     text-align: center;
 }
+
+
 
 /* navigation bar */
 /* current page indicator on navbar */
@@ -51,12 +53,15 @@ h2 {
     margin-left: 0px;
     text-align: center;
 }
+
 /*mouse hover animation on navbar*/
 #navbar a:hover {
     background: rgb(255, 255, 255);
     color: black;
     border-radius: 9px;
 }
+
+
 
 
 .tree-images {
@@ -70,7 +75,6 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
 }
-
 td,
 th {
     border: 1px solid #000000;
@@ -90,6 +94,7 @@ td {
 
 
 
+
 /* assessment and class lists */
 .lists {
     color: #ffffff;
@@ -97,33 +102,17 @@ td {
     padding: 6px;
     border-radius: 6px;
     text-decoration: none;
+    
 }
-
 
 .lists:hover {
     color: #000000;
     background: #275673;
 }
-.lists-main ul li {
+
+ul li {
     margin-bottom: 16px;
     list-style-type: none;
-    
-}
-
-ul {
-    margin: 0px;
-    padding-left: 0px;
-}
-li {
-    margin: 0px;
-    padding-left: 0px;
-}
-
-
-/* Font */
-
-body {
-    font-family: Arial, sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
