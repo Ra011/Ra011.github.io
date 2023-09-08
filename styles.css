@@ -120,6 +120,36 @@ li {
 }
 
 
+.assignment-box{
+    background-color: #275673;
+    text-align: center;
+    border: 3px solid #040369;
+    border-radius: 10px;
+    margin-bottom: 3%;
+}
+.assignment-box h2{
+    color: #ffffff;
+}
+.assignment-box img{
+    border-radius: 5px;
+}
+
+.assignment-box a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.assignment-column{
+    width: 85%;
+    margin: auto;
+}
+.content{
+    text-align: center;
+    justify-content: center;
+}
+
+
+
 /* Font */
 
 body {
@@ -131,4 +161,15 @@ body {
         display: inline-block;
         text-align: center;
     }
+    .columns {
+        display: flex;
+        column-gap: 4%;
+  
+        justify-content: center;
+    }
+    .col1of3 {
+        flex: 1;
+    }
+
+   
 }
