@@ -207,6 +207,7 @@ footer{
     height: auto;
     padding: 0px;
     margin: 0px;
+    display: block;
 }
 
 #floating-text {
@@ -223,8 +224,8 @@ footer{
 }
 .text-section {
     margin: 0px;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 23%;
+    margin-right: 23%;
     padding-top: 50px;
     padding-bottom: 50px;
     top: 0;
@@ -312,6 +313,7 @@ button:hover {
     padding: 0px;
     margin: 0px;
     margin-left: 10%;
+    display: block;
 }
 
 .text-and-image-section2 {
