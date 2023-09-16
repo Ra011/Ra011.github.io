@@ -21,11 +21,12 @@ main {
     padding: 0;
 }
 
-footer{
+footer {
     width: 100%;
     margin: 0;
     padding: 0;
 }
+
 #navbar-1 {
     top: 0;
     width: 100%;
@@ -81,9 +82,11 @@ footer{
 .col1of4 {
     flex: 2;
 }
+
 .col1of3 {
     flex: 1;
 }
+
 .col2of3 {
     flex: 2;
 }
@@ -105,21 +108,27 @@ footer{
 .col4of7 {
     flex: 4;
 }
+
 .col1of2 {
     flex: 1;
 }
+
 .col1of6 {
     flex: 1;
 }
+
 .col2of6 {
     flex: 2;
 }
+
 .col3of6 {
     flex: 3;
 }
+
 .col1of5 {
     flex: 1;
 }
+
 .col3of5 {
     flex: 3;
 }
@@ -219,9 +228,11 @@ footer{
     top: -20%;
     left: 10%;
 }
-.text-section1{
+
+.text-section1 {
     position: relative;
 }
+
 .text-section {
     margin: 0px;
     margin-left: 23%;
@@ -332,15 +343,16 @@ button:hover {
     color: #73000a;
 }
 
-.text-right{
+.text-right {
     margin-left: 0px;
     margin-right: 20%;
 }
 
-.spotlight-columns{
+.spotlight-columns {
     display: flex;
     column-gap: 2%;
 }
+
 #square-image {
     width: 100%;
     height: auto;
@@ -349,19 +361,21 @@ button:hover {
 
 }
 
-.research-spotlights h1{
+.research-spotlights h1 {
     color: #73000a;
     text-align: center;
     font-size: 30px;
-    font-weight:bolder;
+    font-weight: bolder;
 }
-.research-spotlights h3{
+
+.research-spotlights h3 {
     color: #73000a;
     text-align: center;
     font-size: 20px;
     margin-top: 0;
 }
-.research-spotlights p{
+
+.research-spotlights p {
     text-align: center;
     font-size: 15px;
     margin-top: 0;
@@ -383,6 +397,7 @@ button:hover {
 .text-and-image-section3 h3 {
     color: #73000a;
 }
+
 #small-image2 {
     width: 70%;
     height: auto;
@@ -408,16 +423,16 @@ button:hover {
     color: #73000a;
 }
 
-.background-image{
+.background-image {
     background: url("images/university-south-carolina-columbia_1010.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    justify-content: center;   
+    justify-content: center;
     display: flex;
     column-gap: 0%;
 }
 
-.floating-box{
+.floating-box {
     margin: 200px 0 60px 100px;
     padding: 30px;
     background-color: #73000a;
@@ -463,6 +478,7 @@ button:hover {
 .image-and-text-section5 h3 {
     color: #73000a;
 }
+
 .image-and-text-section5 p {
     font-size: 15px;
 }
@@ -476,37 +492,41 @@ button:hover {
 }
 
 
-footer{
+footer {
     background-color: #73000a;
 }
 
-#logo2{
+#logo2 {
     width: 100%;
 }
-#logo3{
+
+#logo3 {
     width: 70%;
 }
 
 
-.footer-top , .footer-mid {
+.footer-top,
+.footer-mid {
     display: flex;
     column-gap: 0%;
     justify-content: center;
     margin-left: 8%;
     margin-right: 8%;
 }
-.first-footer-columns, .second-footer-columns{
+
+.first-footer-columns,
+.second-footer-columns {
     display: flex;
     column-gap: 0%;
     justify-content: center;
 }
 
-.footer-red{
+.footer-red {
     padding-top: 30px;
     color: white;
 }
 
-.footer-lists{
+.footer-lists {
     top: 0;
     width: 100%;
     border-radius: 0px;
@@ -519,7 +539,7 @@ footer{
 
 }
 
-.footer-lists ul{
+.footer-lists ul {
     list-style: none;
     margin-left: 0px;
     padding-left: 0px;
@@ -527,19 +547,20 @@ footer{
     color: #f2f2f2;
 }
 
-.footer-lists ul, li{
+.footer-lists ul,
+li {
     margin-bottom: 15px;
     text-align: left;
-   
+
 }
 
 hr.solid {
     border-top: 1px solid #bbb;
     margin-right: 50px;
-  }
+}
 
 
-  .footer-lists a {
+.footer-lists a {
 
     color: #f2f2f2;
 
@@ -610,6 +631,6 @@ hr.solid {
 
 @media only screen and (max-width: 1000px) {
     #floating-text {
-        display:none;
+        display: none;
     }
 }

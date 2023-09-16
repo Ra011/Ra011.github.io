@@ -1,0 +1,58 @@
+/* navigation bar */
+/* current page indicator on navbar */
+
+body {
+    background: url("../../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;   
+}
+
+
+.this-page {
+    background-color: #496373;
+    border-radius: 9px;
+}
+#navbar {
+    background-color: #275673;
+    top: 0;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    list-style-type: none;
+}
+#navbar ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+/*navbar links*/
+#navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 14px 40px;
+    text-decoration: none;
+    margin-left: 0px;
+}
+/*mouse hover animation on navbar*/
+#navbar a:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 9px;
+}
+
+.java-test {
+    background-color: aqua;
+    padding: 5px;
+    color: black;
+    border: 2px dotted red;
+}
+.hide{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    #navbar li {
+        display: inline-block;
+        text-align: center;
+    }
+}
