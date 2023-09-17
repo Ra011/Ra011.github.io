@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Raphael Attfield's page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section class="content">
+    <header>
+        <div id="navbar">
+            <ul>
+                <li> <a href="../../index.html"><b>Home</b></a></li>
+                <li><a class="this-page" href="../../classes.html"><b>Classes</b></a></li>
+                <li><a href="../../assignments.html"><b>Assignments</b></a></li>
+                <li> <a href="../../about.html"><b>About</b></a></li>
+            </ul>
+        </div>
+        <h3 id="header-heading">Intro to JavaScript</h3>
+    </header>
+    <main>
+
+        <div class="columns">
+            <section class="box-layout col1of3">
+                <header>
+                    <h1> Hide and Seek</h1>
+                </header>
+                <section class="center-me buttons">
+                    <button id="show-button">Show</button>
+                    <button id="hide-button">hide</button>
+                </section>
+                <section class="center-me">
+                    <img id="random-image" class="hide" src="images/image.webp" alt="A sunset over a city">
+                </section>
+            </section>
+
+            <section class="box-layout col1of3 center-me">
+                <header>
+                    <h1> Animate</h1>
+                </header>
+                <button id="animate-button">Animate</button>
+                <div class="center-me loading-icon">
+                    <div id="load-icon"></div>
+                </div>
+            </section>
+
+            <section class="box-layout col1of3">
+                <header>
+                    <h1> Input</h1>
+                </header>
+                <section class="columns2">
+                    <section class="col1of3 input-fields">
+                        <p><label for="txt-product-name">Product Name:</label></p>
+                        <p> <label for="txt-comment">Comment:</label></p>
+                        <p> <label for="txt-rating">Rating:</label></p>
+                        <p> <label for="txt-username">Username:</label></p>
+                    </section>
+                    <section class="col2of3">
+                        <p>
+                            <input type="text" id="txt-product-name">
+                        </p>
+                        <p>
+                            <input type="text" id="txt-comment">
+                        </p>
+                        <p>
+                            <input type="text" id="txt-rating">
+                        </p>
+                        <p>
+                            <input type="text" id="txt-username">
+                        </p>
+                    </section>
+                </section>
+
+
+                    <div class="center-me">
+                        <button id="button-add-comment">Add Comment</button>
+                    </div>
+                    <div id="responses"></div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+<h3 id="footer-heading"> Footer</h3>
+    </footer>
+</section>
+</body>
+</html>
