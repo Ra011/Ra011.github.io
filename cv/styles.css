@@ -39,7 +39,7 @@ div
     border-radius: 3px;
     border: none;
 }
-#second-line{
+.second-line{
     width: 100%;
     color:  #cadee5;
     height: 3px;
@@ -49,11 +49,12 @@ div
 
 }
 .third-line{
-    width: 100%;
+    /* width: 100%;
     color:  #000000;
     height: 1px;
     border: none;
-    background-color:#000000;
+    background-color:#000000; */
+    border-top: 2px solid black;
 }
 .side-line{
     width: 90%;
@@ -207,6 +208,41 @@ li {
     padding-top: 2px;
 }
 
+footer{
+    text-align: center;
+    color: #2a426e;
+    font-style: italic;
+}
+.for-positioning{
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.black-box{
+    width: 75px;
+    height: 20px;
+    background-color: #000000;
+    position: absolute;
+}
+.text-box{
+    font-size: 11px;
+    background-color: #ece000;
+    width: 255px;
+    opacity: 0.7;
+    position: relative;
+    top: 350px;
+    left: 290px;
+}
+
+.first-box{
+    top: 367px;
+    left: 455px;
+}
+.second-box{
+    top: 466px;
+    left: 220px;
+}
   @media print {
     body, page {
       background: white;
