@@ -1,0 +1,139 @@
+/* navigation bar */
+/* current page indicator on navbar */
+
+body {
+    background: url("../../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+
+.this-page {
+    background-color: #496373;
+    border-radius: 9px;
+}
+
+#navbar {
+    background-color: #275673;
+    top: 0;
+    width: 100%;
+    border-radius: 15px;
+    text-align: center;
+    list-style-type: none;
+}
+
+#navbar ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+/*navbar links*/
+#navbar a {
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 14px 40px;
+    text-decoration: none;
+    margin-left: 0px;
+}
+
+/*mouse hover animation on navbar*/
+#navbar a:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border-radius: 9px;
+}
+
+
+
+#hamburger div{
+    align-self: center;
+    width:35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+
+}
+.hide-small{
+    display: none;
+}
+
+
+label, input{
+    display: block;
+}
+
+label{
+    width: 100px;
+    display: block;
+    text-align: right;
+}
+input{
+    width: 150px;
+}
+
+#result section {
+    border: 1px solid black;
+    background-color: #275673;
+}
+
+.columns{
+    display: flex;
+}
+@media only screen and (min-width: 768px) {
+    #navbar li {
+        display: inline-block;
+        text-align: center;
+    }
+    #hamburger{
+display: none;
+    }
+    .hide-small{
+        display: block;
+    }
+}
+
+
+
+
+/* Structure */
+
+body {
+    background-color: antiquewhite;
+}
+
+
+/* Animation */
+
+#square {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.move-square {
+    position: relative;
+    animation-name: anim-square;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anim-square {
+    0% {
+        background-color: cornflowerblue;
+        opacity: 1;
+        top: 0px;
+    }
+    50% {
+        background-color: green;
+        opacity: 0;
+        top: 100px;
+    }
+    100% {
+        background-color: red;
+        opacity: 1;
+        top: 0px;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Raphael Attfield's page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <section class="content">
+        <header>
+            <div id="navbar">
+                <ul>
+                    <li> <a href="../../index.html"><b>Home</b></a></li>
+                    <li><a class="this-page" href="../../classes.html"><b>Classes</b></a></li>
+                    <li><a href="../../assignments.html"><b>Assignments</b></a></li>
+                    <li> <a href="../../about.html"><b>About</b></a></li>
+                </ul>
+            </div>
+            <h3 id="header-heading">If Statement Assignment</h3>
+
+            <nav id="sub-nav">
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items" class="hide-small">
+                    <li><a id="ex1-button" class="this-ex" href="#">Exercise 1</a></li>
+                    <li><a id="ex2-button" href="#">Exercise 2</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div id="ex-1" class="exercise-box">
+                <h2 class="heading-ex">Who's the oldest?</h2>
+                <section class="input-area columns2">
+                    <form class="input-fields col1of2">
+                        <p>
+                            <label for="txt-name1">Name 1:</label>
+                            <input type="text" id="txt-name1" required>
+                            <div id="error-name1" class="error hidden"></div>
+                        </p>
+                        <p> <label for="number-age1">Age 1:</label>
+                            <input type="number" id="number-age1" required>
+                            <div id="error-num1" class="error hidden"></div>
+                        </p>
+                        <p> <label for="txt-name2">Name 2:</label>
+                            <input type="text" id="txt-name2" required>
+                            <div id="error-name2" class="error hidden"></div>
+                        </p>
+
+                        <p> <label for="number-age2">Age 2:</label>
+                            <input type="number" id="number-age2" required>
+                            <div id="error-num2" class="error hidden"></div>
+                        </p>
+
+                        <p> <label for="txt-name3">Name 3:</label>
+                            <input type="text" id="txt-name3" required>
+                            <div id="error-name3" class="error hidden"></div>
+                        </p>
+                        <p> <label for="number-age3">Age 3:</label>
+                            <input type="number" id="number-age3" required>
+                            <div id="error-num3" class="error hidden"></div>
+                        </p>
+                        <button id="button-compare-age">Compare Ages!</button>
+
+                    </form>
+
+                </section>
+                <div id="sorted-order"></div>
+            </div>
+
+
+
+
+
+
+            <div id="ex-2" class="hide-ex exercise-box center-me">
+                <h2 class="heading-ex">Fund Raising</h2>
+                <h3>Goal: 10,000</h3>
+                <section class="columns center-me extra-padding">
+                    <section class="col1of2 funds-input">
+                        <form>
+                            <p> <label for="target-amount">Funds Raised:</label>
+                                <input type="number" id="target-amount" required>
+                                <div id="error-num3" class="error hidden"></div>
+                            </p>
+                            <button id="button-display">Display</button>
+                        </form>
+                    </section>
+                    <section class="col1of2 funds-graph">
+                        <div id="rectangle">
+                        </div>
+                    </section>
+                </section>
+            </div>
+    </section>
+    </main>
+
+    <footer>
+        <h3 id="footer-heading"> Footer</h3>
+    </footer>
+    </section>
+</body>
+
+</html>
