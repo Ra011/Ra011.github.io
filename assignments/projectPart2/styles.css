@@ -106,8 +106,7 @@ body {
 }
 
 .content-box {
-    background-color: #000000;
-    opacity: 70%;
+    background: rgba(0, 0, 0, 0.7);
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -118,6 +117,38 @@ body {
     color: white;
     text-align: center;
     font-size: 25px;
+}
+.content-box-medium {
+    background: rgba(0, 0, 0, 0.7);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 30px;
+    padding-top: 1%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.content-box-large {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 30px;
+    padding-top: 1%;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.content-box-large-text{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 /* END OF MAIN SECTION */
 
@@ -154,6 +185,80 @@ button:hover {
     min-height: 850px;
 }
 /* END OF HOMEPAGE */
+
+/* ABOUT PAGE */
+.background-about {
+    background: url("images/background-Image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    min-height: 850px;
+}
+/* END OF ABOUT PAGE */
+
+/* MENU PAGE */
+.background-menu {
+    background: url("images/background-Image3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    min-height: 850px;
+.food-image{
+    width: 200px;
+    height: 200px;
+}
+    .food-image:hover{
+        -webkit-filter: drop-shadow(7px 7px 4px #666666);
+        filter: drop-shadow(7px 7px 4px #666666);
+    }
+}
+/* END OF MENU PAGE */
+
+
+
+
+/* WHATSON */
+.background-whatson {
+    background: url("images/background-image3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    min-height: 850px;
+}
+
+#whatson-list {
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    width: 100%;
+    text-align: center;
+    list-style-type: none;
+}
+#whatson-list ul {
+    margin-left: 0px;
+    padding-left: 0px;
+}
+/*navbar links*/
+#whatson-list li {
+    display: inline-block;
+    color: #D4AF37;
+    padding: 14px 40px;
+    text-decoration: none;
+    margin-left: 0px;
+    border: 1px solid #D4AF37;
+    border-radius: 9px;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+
+/* END OF WHATSON */
+
 
 /* LARGE SCREEN */
 @media only screen and (min-width: 768px) {
