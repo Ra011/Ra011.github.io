@@ -1,4 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 
+html *
+{
+    font-family: 'Roboto', sans-serif;
+}
 
 /* NAVBAR */
 #navbar {
@@ -107,7 +112,7 @@ body {
 
 .content-box {
     background: rgba(0, 0, 0, 0.7);
-    width: 70%;
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
@@ -118,9 +123,12 @@ body {
     text-align: center;
     font-size: 25px;
 }
+.content-box2 {
+    padding-top: 2%;
+}
 .content-box-medium {
     background: rgba(0, 0, 0, 0.7);
-    width: 85%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
@@ -148,7 +156,6 @@ body {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-
 }
 /* END OF MAIN SECTION */
 
@@ -219,6 +226,53 @@ button:hover {
 /* END OF MENU PAGE */
 
 
+/* BOOKINGS PAGE */
+.background-bookings {
+    background: url("images/background-Image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    margin: 0px;
+    min-height: 850px;
+}
+
+.input-fields label{
+    color: #D4AF37;
+    font-size: 22px;
+    text-align: left;
+    font-weight: bold;
+}
+.input-fields input{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 40%;
+    padding: 12px 10px;
+    border: 2px solid #D4AF37;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+}
+.input-fields input:focus {
+    background-color: #D4AF37;
+    color: #000000;
+  }
+
+  label {
+    display: inline-block;
+    width: 150px;
+  }
+  .input-area{
+    padding: 20px;
+  }
+  #button-add-booking{
+    font-size: 20px;
+    margin-top: 35px;
+  }
+  #booking-header{
+    color: #D4AF37;
+  }
+/* END OF BOOKINGS PAGE */
 
 
 /* WHATSON */
@@ -272,6 +326,12 @@ button:hover {
     }
     .col1of5 {
         flex: 1;
+    }
+    .col1of3 {
+        flex: 1;
+    }
+    .col2of3 {
+        flex: 2;
     }
     .add-left-border {
         border-left: 2px solid #D4AF37;
