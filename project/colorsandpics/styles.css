@@ -137,6 +137,12 @@ body {
     text-align: center;
     font-size: 25px;
 }
+.content-box-home {
+    margin-top: 3%;
+    padding-top: 4%;
+    
+  
+}
 
 .content-box2 {
     padding-top: 2%;
@@ -367,31 +373,42 @@ label {
 }
 
 .whatson-img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border: 3px solid #D4AF37;
     border-radius: 9px;
     margin: 10px;
+    margin-top: 30px;
 }
 
 .whatson-header {
     color: #D4AF37;
-    ;
     font-size: 40px;
+    margin-bottom: 0;
 }
 
 .whatson-header1 {
     padding: 20px;
+    padding-bottom: 0%;
     margin: 0;
     color: white;
     ;
     font-size: 50px;
 }
 
+.whatson-date {
+    color: #D4AF37;
+    font-size: 20px;
+    margin-top: 0;
+    padding-top: 0;
+}
 .whatson-para {
     color: white;
     font-size: 20px;
+    margin-top: 0;
+    padding-top: 0;
 }
+
 
 /* END OF WHATSON */
 
