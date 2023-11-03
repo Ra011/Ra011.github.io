@@ -32,7 +32,7 @@ const getTeams = async () => {
   try {
     return (await fetch("http://localhost:3000/api/teams")).json();
   } catch (error) {
-    console.log("error retrieving json");
+    console.log("error retrieving JSON");
     return "";
   }
 }
