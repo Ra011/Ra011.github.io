@@ -9,10 +9,14 @@ body {
     background: -webkit-linear-gradient(#160163, #475bee);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 h2 {
     color: #275673;
+}
+#classes-heading {
+   margin-bottom: 0;
 }
 
 .content {
@@ -127,7 +131,7 @@ td {
 .lists-main ul li {
     margin-bottom: 16px;
     list-style-type: none;
-    
+    width: 200px;
 }
 
 ul {
