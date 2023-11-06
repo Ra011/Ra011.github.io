@@ -247,7 +247,13 @@ li {
 }
 
 
-
+#preview-image
+{
+    border: 2px solid #275673;
+    box-shadow: 6px 6px#275673;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
 
 /* Font */
 
