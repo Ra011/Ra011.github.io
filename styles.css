@@ -268,6 +268,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
+li {
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media only screen and (min-width: 768px) {
     #navbar li {
         display: inline-block;
@@ -276,7 +282,6 @@ body {
     .columns {
         display: flex;
         column-gap: 4%;
-  
         justify-content: center;
     }
     .col1of3 {
