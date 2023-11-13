@@ -13,93 +13,127 @@ app.get("/", (req, res) => {
     res.sendFile(__dirname + "/index.html");
 });
 
-let recipes = [{
+let teams = [{
         _id: 1,
-        name: "Banana Bread",
-        description: "Extra soft and bannanny",
-        rating: 4,
-        ingredients: [
-            "3 very ripe bananas, (medium/large)",
-            "½ cup unsalted butter, (8 Tbsp) at room temperature",
-            "3/4 cup granulated sugar",
-            "2 large eggs, lightly beaten",
-            "1 ½ cups all-purpose flour",
-            "1 tsp baking soda",
-            "½ tsp salt",
-            "½ tsp vanilla extract",
-            "1 cup walnuts",
-            "½ cup raisins",
+        name: "Arsenal", 
+        position: "2nd", 
+        country: "England", 
+        nickname: "The Gunners", 
+        kitcolour: "Red", 
+        players: [
+            "Sake",
+            "Odegaard",
+            "Saliba",
         ],
     },
     {
         _id: 2,
-        name: "Chocolate Chip Cookies",
-        description: "Very chocolately cookies",
-        ingredients: [
-            "1 cup salted butter softened",
-            "1 cup granulated sugar",
-            "1 cup light brown sugar packed",
-            "2 teaspoons pure vanilla extract",
-            "2 large eggs",
-            "3 cups all-purpose flour",
-            "1 teaspoon baking soda",
-            "½ teaspoon baking powder",
-            "1 teaspoon sea salt",
-            "2 cups chocolate chips (14 oz)",
+        name: "Juventus",
+        position: "7th",
+        country: "Italy",
+        nickname: "The Old Lady",
+        kitcolour: "Black and White",
+        players: [
+            "Vlahovic",
+            "Chiesa",
+            "Locatelli",
         ],
     },
     {
         _id: 3,
-        name: "Vanilla Cake",
-        description: "Real vanilla bean in a cake",
-        ingredients: [
-            "3 and 2/3 cups (433g) cake flour (spoon & leveled)",
-            "1 teaspoon salt",
-            "2 teaspoons baking powder",
-            "3/4 teaspoon baking soda",
-            "1 and 1/2 cups (345g) unsalted butter, softened to room temperature",
-            "2 cups (400g) granulated sugar",
-            "3 large eggs + 2 additional egg whites, at room temperature*",
-            "1 Tablespoon pure vanilla extract (yes, Tbsp!)",
-            "1 and 1/2 cups (360ml) buttermilk, at room temperature*",
+        name: "Barcelona",
+        position: "2nd",
+        country: "Spain",
+        nickname: "Barca",
+        kitcolour: "Red and Blue",
+        players: [
+            "Lewandowski",
+            "De jong",
+            "Pedri",
+        ],
+    },
+    {
+        _id: 4,
+        name: "Real Madrid",
+        position: "1st",
+        country: "Spain",
+        nickname: "	Los Blancos",
+        kitcolour: "White",
+        players: [
+            "Vinicious Jr",
+            "Modric",
+            "Kroos",
+        ],
+    },
+    {
+        _id: 5,
+        name: "PSG",
+        position: "1st",
+        country: "France",
+        nickname: "Les Parisiens",
+        kitcolour: "Red, Blue and White",
+        players: [
+            "Mbappe",
+            "Dembele",
+            "Hakimi",
+        ],
+    },
+    {
+        _id: 6,
+        name: "Bayern Munich",
+        position: "1st",
+        country: "Germany",
+        nickname: "	Die Bayern (The Bavarians)",
+        kitcolour: "Red",
+        players: [
+            "Kane",
+            "Kimmich",
+            "Muller",
         ],
     },
 ];
 
-app.get("/api/recipes", (req, res) => {
-    res.send(recipes);
+app.get("/api/teams", (req, res) => {
+    res.send(teams);
 });
 
-app.post("/api/recipes", upload.single("img"), (req, res) => {
-    const result = validateRecipe(req.body);
+app.post("/api/teams", upload.single("img"), (req, res) => {
+    const result = validateTeam(req.body);
 
     if (result.error) {
-        res.status(400).send(result.error.details[0].message);
+        res.status(400).send(result.error.information[0].message);
         return;
     }
 
-    const recipe = {
-        _id: recipes.length + 1,
+    const team = {
+        _id: teams.length + 1,
         name: req.body.name,
-        description: req.body.description,
-        ingredients: req.body.ingredients.split(",")
+        position: req.body.position,
+        country: req.body.county,
+        nickname: req.body.nickname,
+        kitcolour: req.body.kitcolour,
+        players: req.body.players.split(",")
     }
 
-    recipes.push(recipe);
-    res.send(recipes);
+    teams.push(team);
+    res.send(teams);
 });
 
-const validateRecipe = (recipe) => {
+const validateTeam = (team) => {
     const schema = Joi.object({
         _id: Joi.allow(""),
-        ingredients: Joi.allow(""),
         name: Joi.string().min(3).required(),
-        description: Joi.string().min(3).required()
+        position: Joi.string().max(4).required(),
+        country: Joi.string().min(4).required(),
+        nickname: Joi.string().min(3).required(),
+        kitcolour: Joi.string().min(3).required(),
+        players: Joi.allow(""),
     });
 
-    return schema.validate(recipe);
+    return schema.validate(team);
 };
 
 app.listen(3000, () => {
-    console.log("I'm listening");
+    console.log("Listening");
 });
+
