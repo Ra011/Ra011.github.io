@@ -12,7 +12,7 @@ const upload = multer({ dest: __dirname + "/public/images" });
 
 mongoose
   .connect(
-    "mongodb+srv://portiaportia:EyHXaKhndBmhv5Sa@data.ng58qmq.mongodb.net/"
+    "mongodb+srv://raphaelattfield:U4ZivtKn7i6x-iY@cluster0.3umc0ij.mongodb.net/"
   )
   .then(() => console.log("Connected to mongodb..."))
   .catch((err) => console.error("could not connect ot mongodb...", err));
@@ -113,6 +113,6 @@ const validateRecipe = (recipe) => {
   return schema.validate(recipe);
 };
 
-app.listen(3010, () => {
+app.listen(3000, () => {
   console.log("I'm listening");
 });
